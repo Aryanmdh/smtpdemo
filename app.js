@@ -15,4 +15,4 @@ const server = new SMTPServer({
   disabledCommands: ['AUTH']
 });
 
-server.listen(25,'54.234.112.203')
+server.listen(25)
