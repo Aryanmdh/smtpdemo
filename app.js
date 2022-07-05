@@ -9,6 +9,7 @@ const server = new SMTPServer({
       if (err) console.log("ERR", err);
 
       console.log(parsed);
+      stream.pipe(process.stdout)
       stream.on("end", callback);
     });
   },
